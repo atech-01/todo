@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future addTodo(BuildContext context) async {
-    var url = Uri.parse("http://192.168.81.64/todo/addTodo.php");
+    var url = Uri.parse("https://hamdalavtu.com.ng/todo/addTodo.php");
 
     var response = await http.post(
       url,
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future getTodo() async {
-    var url = Uri.parse("http://192.168.81.64/todo/getTodo.php");
+    var url = Uri.parse("https://hamdalavtu.com.ng/todo/getTodo.php");
 
     var response = await http.get(url);
 
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future deleteTodo(String id) async {
     debugPrint("Clicked");
-    var url = Uri.parse("http://192.168.81.64/todo/deleteTodo.php");
+    var url = Uri.parse("https://hamdalavtu.com.ng/todo/deleteTodo.php");
 
     var response = await http.post(
       url,
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future editTodo(BuildContext context, String id, String newTodo) async {
     // debugPrint("Clicked");
-    var url = Uri.parse("http://192.168.81.64/todo/editTodo.php");
+    var url = Uri.parse("https://hamdalavtu.com.ng/todo/editTodo.php");
 
     var response = await http.post(
       url,
